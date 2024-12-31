@@ -1,0 +1,65 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container > .outer {
+    margin-top: 10vh;
+    width: 84px;
+    height: 44px;
+    border-radius: 20px;
+    outline: solid rgb(157, 153, 153) 1px;
+    transition: 100ms ease-in;
+}
+
+.container > .outer.light {
+    background: rgb(255, 255, 255);
+}
+
+.container > .outer.dark {
+    background: rgb(8, 42, 114);
+}
+
+.inner {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    transition: 100ms ease-in;
+}
+
+.inner.light {
+    background: rgb(8, 42, 114);
+    left: 2px;
+}
+
+.inner.dark {
+    background: white;
+    left: 42px;
+}
+
+.container {
+    transition: 100ms ease-in;
+}
+
+.container.light {
+    background: lightskyblue;
+}
+
+.container.dark {
+    background: darkslategrey;
+}
